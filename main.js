@@ -39,9 +39,9 @@ checkBtn.addEventListener('click', function () {
       }
     }
     // check for too high
-    if (inputValue > secretNum + 2) message.textContent = 'too high';
+    if (inputValue > secretNum + 2) displayMessage('too high');
     // check for too low
-    if (inputValue < secretNum - 2) message.textContent = 'too low';
+    if (inputValue < secretNum - 2) displayMessage('too low');
     // check for too close
     if (
       inputValue == secretNum + 1 ||
