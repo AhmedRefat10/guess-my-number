@@ -21,7 +21,6 @@ const lostGame = function () {
 };
 // generate random number
 let secretNum = Math.trunc(Math.random() * 20) + 1;
-console.log(secretNum);
 // on check btn
 checkBtn.addEventListener('click', function () {
   // make input value == number
@@ -66,10 +65,8 @@ checkBtn.addEventListener('click', function () {
 
 // on again btn
 againBtn.addEventListener('click', function () {
-  console.log(secretNum);
   // generate new secret number
   secretNum = Math.trunc(Math.random() * 20) + 1;
-  console.log(secretNum);
   // return settings back
   document.querySelector('.guess').value = '';
   number.textContent = '?';
